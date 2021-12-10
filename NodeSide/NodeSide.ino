@@ -7,4 +7,5 @@ void loop() { // run over and over
     String valori = String(Serial.read());
     Serial.println(valori);
   }
+  
 }
