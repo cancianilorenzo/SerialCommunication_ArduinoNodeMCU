@@ -14,7 +14,7 @@ float lux = analogRead(A1); //Photoresistor
 float water = analogRead(A2); //WaterLevel
 float soilHum = analogRead(A3); // SoilHum
 
-Serial.print("TEMP: ");
+/*Serial.print("TEMP: ");
 Serial.print(temp);
 Serial.print("---"); //terminatore di stringa, non confonde con -
 Serial.print(" LUX: ");
@@ -25,7 +25,7 @@ Serial.print(water);
 Serial.println("---");
 Serial.print(" SOILHUM: ");
 Serial.print(soilHum);
-Serial.println("---");
+Serial.println("---");*/
 str =String("Sensor --> ")+String("TEMP= ")+String(temp)+String("LUX= ")+String(lux)+String("WATER= ")+String(water)+String("SOILHUM= ")+String(soilHum);
 espSerial.println(str);
 delay(1000);
